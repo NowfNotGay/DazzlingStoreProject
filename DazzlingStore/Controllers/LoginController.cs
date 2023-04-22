@@ -8,8 +8,14 @@ namespace DazzlingStore.Controllers
     public class LoginController : Controller
     {
         [Route("")]
-        [Route("index")]
-        public IActionResult Index()
+        [Route("login")]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [Route("register")]
+        public IActionResult Register()
         {
             return View();
         }
