@@ -15,6 +15,10 @@ public partial class Product
 
     public int Cost { get; set; }
 
+    public bool OutStanding { get; set; }
+
+    public bool Status { get; set; }
+
     public int BrandId { get; set; }
 
     public int CategoryId { get; set; }

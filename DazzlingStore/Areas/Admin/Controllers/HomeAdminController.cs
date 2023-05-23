@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace DazzlingStore.Controllers
+namespace DazzlingStore.Areas.Admin.Controllers
 {
-    [Route("homepage")]
-    public class HomePageController : Controller
+    [Area("admin")]
+    [Route("admin/homeadmin")]
+    public class HomeAdminController : Controller
     {
-        //[Route("~/")]
+        [Route("~/")]
         [Route("")]
         [Route("index")]
-
         public IActionResult Index()
         {
             return View();
